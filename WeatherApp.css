@@ -1,0 +1,190 @@
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  font-size: 200%;
+  padding-left: 100px;
+  color: aliceblue;
+  background-image: url(https://drive.google.com/uc?export=download&id=1nuiCXXJbU2j2o8lVtizteKWqQKxCDlvl);
+  background-blend-mode: multiply;
+  background-size: auto;
+  background-position: center;
+  background-color: rgb(151, 80, 218);
+  backdrop-filter: blur(1.5px);
+  font-family: "Fjalla One", sans-serif;
+}
+
+body.h2 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  height: max-content;
+  padding: 0;
+  width: 100%;
+  border-radius: 30px;
+  max-width: 500px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3em;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.search:hover:before {
+  opacity: 1;
+}
+
+.card {
+  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.7;
+}
+.search {
+  position: relative;
+  width: 500px;
+  border-radius: 15px;
+}
+
+.search:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #002bd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  top: -2px;
+  left: -2px;
+  background-size: 300px;
+  border-radius: 15px;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 20px);
+  height: calc(100% + 10px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.search:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+input {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 15px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(46, 112, 255);
+  font-family: "Fjalla One", sans-serif;
+}
+
+.enter {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  border-radius: 15px;
+  right: 0px;
+  border: rgb(46, 112, 255);
+  top: 2px;
+  bottom: 2px;
+  cursor: pointer;
+  color: rgb(46, 112, 255);
+  transform: translateX(2px);
+}
+
+h2 {
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  color: whitesmoke;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black,
+    0 0 1px black, 0 0 1px black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h1.temperature {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 190px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.results {
+  margin: 0;
+  padding: 0;
+}
+
+.weather.loading {
+  visibility: hidden;
+}
+
+.title {
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  position: relative;
+  color: whitesmoke;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black,
+    0 0 1px black, 0 0 1px black;
+}

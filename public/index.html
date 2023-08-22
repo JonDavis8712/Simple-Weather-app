@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>What's The Weather?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="WeatherApp.css" />
+  </head>
+  <body>
+    <div class="card">
+      <p class="title">WHAT IS THE WEATHER?</p>
+      <h2 class="city">Search a City</h2>
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="search city" />
+        <button class="enter">
+          <svg
+            stroke="none"
+            fill="currentColor"
+            stroke-width=".5"
+            viewBox="0 -3 24 24"
+            height="2em"
+            width="2em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
+            ></path>
+            <path
+              d="M11.412,8.586C11.791,8.966,12,9.468,12,10h2c0-1.065-0.416-2.069-1.174-2.828c-1.514-1.512-4.139-1.512-5.652,0 l1.412,1.416C9.346,7.83,10.656,7.832,11.412,8.586z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="weather loading">
+        <!-- <h2 class="city">Search a City</h2> -->
+
+        <div class="flex">
+          <h1 class="temperature"></h1>
+          <img
+            class="icon"
+            src="https://lh3.googleusercontent.com/CVm25tt39p5RDIDhqPo13J2d4CMqXEHt-fqO0tU_k0iYkQxzaZ4LTMIg0RSHXqLw26QAYOMFxfVAjstt0CH7wTZD2w6ZJx9sZR4PjX8-i0-wy-Xfa5wiRn4iDBN1CQCLO5Y8vyKpaA=s256-p-k"
+            alt=""
+            width="256px"
+            height="256px"
+          />
+        </div>
+        <div class="results">
+          <div style="font-size: 50px" class="description">
+            What's the weather?
+          </div>
+          <div class="wind"></div>
+          <div class="humidity"></div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bundle.js" type="application/javascript" defer></script>
+  </body>
+</html>

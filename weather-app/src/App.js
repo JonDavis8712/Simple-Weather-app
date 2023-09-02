@@ -123,7 +123,7 @@ function App() {
 
   return (
     <div className="card">
-      <p className="title">WHAT IS THE WEATHER?</p>
+      <p className="title">Just Tell me The Weather...</p>
       <h2 className="city">Search a City</h2>
       <div className="search">
         <input
@@ -273,7 +273,7 @@ function App() {
         <div className="flex">
           <h1 className="temperature"></h1>
           <img
-            className="icon"
+            className="weatherIcon"
             src="https://lh3.googleusercontent.com/CVm25tt39p5RDIDhqPo13J2d4CMqXEHt-fqO0tU_k0iYkQxzaZ4LTMIg0RSHXqLw26QAYOMFxfVAjstt0CH7wTZD2w6ZJx9sZR4PjX8-i0-wy-Xfa5wiRn4iDBN1CQCLO5Y8vyKpaA=s256-p-k"
             alt=""
             width="256px"

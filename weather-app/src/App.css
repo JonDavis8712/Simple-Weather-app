@@ -17,6 +17,8 @@ body {
   background-color: rgb(151, 80, 218);
   backdrop-filter: blur(1.5px);
   font-family: "Fjalla One", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 body.h2 {
@@ -187,4 +189,112 @@ h1.temperature {
   color: whitesmoke;
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black,
     0 0 1px black, 0 0 1px black;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    padding-top: 6rem;
+    font-size: 150%;
+    color: aliceblue;
+    background-image: url(https://drive.google.com/uc?export=download&id=1nuiCXXJbU2j2o8lVtizteKWqQKxCDlvl);
+    background-blend-mode: multiply;
+    background-size: cover;
+    font-family: "Fjalla One", sans-serif;
+    overflow: hidden;
+  }
+
+  .card{
+    position: relative;
+    height: max-content;
+    padding: 0;
+    width: 100%;
+    border-radius: 30px;
+    max-width: 300px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+}
+.search{
+  width: 465px;
+}
+h1.temperature {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 120px;
+}
+.weatherIcon {
+  width: 175px;
+  height: 175px;
+}
+
+.card p {
+  font-size: 28px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    padding-top: 6rem;
+    font-size: 150%;
+    color: aliceblue;
+    background-image: url(https://drive.google.com/uc?export=download&id=1nuiCXXJbU2j2o8lVtizteKWqQKxCDlvl);
+    background-blend-mode: multiply;
+    background-size: cover;
+    font-family: "Fjalla One", sans-serif;
+    overflow: hidden;
+  }
+
+  .card{
+    position: relative;
+    height: max-content;
+    padding: 0;
+    width: 100%;
+    border-radius: 30px;
+    max-width: 300px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+}
+.search{
+  width: 465px;
+}
+h1.temperature {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 120px;
+}
+.weatherIcon {
+  width: 175px;
+  height: 175px;
+}
+
+.card p {
+  font-size: 28px;
+}
+
 }

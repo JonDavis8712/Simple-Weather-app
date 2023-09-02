@@ -270,10 +270,10 @@ h1.temperature {
   }
 
 .results {
-  margin-top: -40px;
+  margin-top: -20px;
 }
 .description {
-  font-size: 30px;
+  font-size: 25px;
 }
   .card{
     position: relative;

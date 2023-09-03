@@ -7,7 +7,6 @@ body {
   height: max-content;
   margin: 0;
   padding: 0;
-  font-size: 200%;
   padding-left: 100px;
   color: aliceblue;
   background-image: url(https://drive.google.com/uc?export=download&id=1nuiCXXJbU2j2o8lVtizteKWqQKxCDlvl);
@@ -18,8 +17,8 @@ body {
   backdrop-filter: blur(1.5px);
   font-family: "Fjalla One", sans-serif;
   white-space: nowrap;
-  overflow: auto;
-  
+  overflow: hidden;
+
 }
 
 body.h2 {

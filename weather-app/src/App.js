@@ -39,12 +39,16 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
       )
         .then((res) => res.json())
-        .then((data) => setWeatherData(data))
-        .catch((err) => alert("Your city not found"));
+        .then((data) => { 
+          setWeatherData(data)
+          setNewIcon(data.weather[0].icon || "");
+        })
+        .catch((err) => alert("Your city not found")); 
+        
     }
+   
 
     const setWeatherData = (data) => {
-      setNewIcon(data.weather[0].icon || "");
       const { name } = data;
       const { icon, description } = data.weather[0];
       const { temp, humidity } = data.main;
